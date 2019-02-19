@@ -25,7 +25,7 @@ listofmatches=root.cssselect("a")
 #THIS CODE TURNS THE HTML WE'VE SCRAPED INTO SOMETHING THAT MAKES SENSE.
 for match in listofmatches: 
   print(match)
-primt(lxml.html.tostring(match))
+primtlxml.html.tostring(match)
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
