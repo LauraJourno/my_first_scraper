@@ -2,7 +2,7 @@
 # including some code snippets below that you should find helpful
 # THE NEXT TWO LINES IMPORT TWO LIBRARIES. LINE 4 IS IMPORTING A SCRAPER WIKI LIBRARY WHICH IS USED FOR SCRAPING PAGES.
 import scraperwiki
-# import lxml.html
+import lxml.html
 #
 print("hello")
 # # Read in a page
