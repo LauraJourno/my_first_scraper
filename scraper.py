@@ -13,7 +13,7 @@ print(html)
 # NOW, WE WANT TO BE MORE SPECIFIC, IT HAS JUST SCRAPED THE WHOLE PAGE. SO WE ARE GOING TO DRILL DOWN FURTHER.
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-print(root.cssselect("div id='footer'"))
+print(root.cssselect("div#footer"))
 #ROOT = HAS CREATED A NEW VARIABLE. THE WORD ROOT IS COMPLETELY ARBITUARY, YOU COULD NAME IS ANYTHING.
 #LXML.HTML is a library we have imported. It is a library which allows you to convert webpages.
 #FROMSTRING - IS A FUNCTION WHICH CONVERTS SOMETHING FROM A STRING OF CHARACTERS IN TO SOMETHING THAT CAN BE DRILLED DOWN IN TO.
