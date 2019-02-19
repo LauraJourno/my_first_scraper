@@ -21,9 +21,9 @@ print(root.cssselect("div#footer"))
 #CSSSELECT IS A FUNCTION TO DRILL DOWN IN TO THE CODE ON THE PAGE. THIS LINE OF CODE IS ASKING IT TO MAKE A MATCH TO ANY HTML TAGS WITHIN THE STRING THAT MATCH THAT CRITERIA.
 #SO "DIVALIGN-'LEFT'... DIV AND ALIGN LEFT ARE HTML TAGS, ALIGN LEFT IS AN ATTRIBUTE, SO WE'RE ASKING IT TO GRAB ANYTHING THAT MATCHES THESE. 
 #WE RAN THIS ON MORPH.IO AND IT CAME BACK WITH EMPTY [ ]. THIS MEANS IT RETURNED NO MATCHES FOR DIVALIGN LEFT. 
-list of matches=root.cssselect("a")
+listofmatches=root.cssselect("a")
 #THIS CODE TURNS THE HTML WE'VE SCRAPED INTO SOMETHING THAT MAKES SENSE.
-for match in list of matches: 
+for match in listofmatches: 
   print(match)
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
