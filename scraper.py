@@ -8,6 +8,7 @@ print("hello")
 # # Read in a page
 html = scraperwiki.scrape("http://foo.com")
 print(html)
+record={record['link']=lxml.html.tostring(match)}
 # EXPLANATION: THE ABOVE CODE HAS A VARIABLE WHICH IS HTML, THE FUNCTION .scrape AND THE ("STRING"). 
 # SO THE CODE HAS GONE TO THIS SITE AND SCRAPED THE HTML WITHIN THE STRING. WE RAN THIS ON MORPH.IO. 
 # NOW, WE WANT TO BE MORE SPECIFIC, IT HAS JUST SCRAPED THE WHOLE PAGE. SO WE ARE GOING TO DRILL DOWN FURTHER.
@@ -28,7 +29,7 @@ for match in listofmatches:
   print(lxml.html.tostring(match))
   print(match.text)
 # # Write out to the sqlite database using scraperwiki library
-# scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
+#scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
 # # An arbitrary query against the database
 # scraperwiki.sql.select("* from data where 'name'='peter'")
