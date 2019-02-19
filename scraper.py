@@ -8,7 +8,7 @@ print("hello")
 # # Read in a page
 html = scraperwiki.scrape("http://foo.com")
 print(html)
-record={record['link']=lxml.html.tostring(match)}
+record={record['link']lxml.html.tostring(match)}
   print(record)
   scraperwiki.sqlite.save(
       unique_keys=['link'],
