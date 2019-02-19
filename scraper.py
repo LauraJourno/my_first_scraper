@@ -9,6 +9,12 @@ print("hello")
 html = scraperwiki.scrape("http://foo.com")
 print(html)
 record={record['link']=lxml.html.tostring(match)}
+  print(record)
+  scraperwiki.sqlite.save(
+      unique_keys=['link'],
+      data=
+        ["record"]
+  )
 # EXPLANATION: THE ABOVE CODE HAS A VARIABLE WHICH IS HTML, THE FUNCTION .scrape AND THE ("STRING"). 
 # SO THE CODE HAS GONE TO THIS SITE AND SCRAPED THE HTML WITHIN THE STRING. WE RAN THIS ON MORPH.IO. 
 # NOW, WE WANT TO BE MORE SPECIFIC, IT HAS JUST SCRAPED THE WHOLE PAGE. SO WE ARE GOING TO DRILL DOWN FURTHER.
